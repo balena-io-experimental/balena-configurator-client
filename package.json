@@ -1,0 +1,31 @@
+{
+  "name": "resin-configurator-client",
+  "version": "0.0.1",
+  "description": "a cross-platform companion app for resin-wifi-connect-ble",
+  "main": "www/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/resin-io-playground/resin-configurator-client.git"
+  },
+  "keywords": [
+    "resin",
+    "wifi",
+    "ble",
+    "configurator",
+    "io",
+    "bluetooth",
+    "comanion",
+    "config",
+    "configuration",
+    "client"
+  ],
+  "author": "Carlo Maria Curinga",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/resin-io-playground/resin-configurator-client/issues"
+  },
+  "homepage": "https://github.com/resin-io-playground/resin-configurator-client#readme"
+}

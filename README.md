@@ -1,6 +1,13 @@
 # resin-configurator-client
 a cross-platform companion app for [resin-wifi-connect-ble](https://github.com/resin-io-playground/wifi-connect-ble)
 
+### Installation
+
+```
+npm install -g cordova cordova-icon cordova-splash
+
+bower install
+```
 
 ### This project uses [ng-cordova](http://ngcordova.com/docs/)
 
