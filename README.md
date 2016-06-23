@@ -1,2 +1,28 @@
 # resin-configurator-client
-a companion mobile application for resin-wifi-connect-ble
+a cross-platform companion app for [resin-wifi-connect-ble](https://github.com/resin-io-playground/wifi-connect-ble)
+
+
+### This project uses [ng-cordova](http://ngcordova.com/docs/)
+
+Before each plugin you must check if your device has fully loaded, and if the plugins are available using a native cordova event called deviceready. Implement it like so:
+
+```javascript
+document.addEventListener("deviceready", function () {
+  $cordovaPlugin.someFunction().then(success, error);
+}, false);
+```
+## License
+
+Copyright 2016 Rulemotion Ltd.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+[http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0)
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.

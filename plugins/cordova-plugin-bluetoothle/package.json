@@ -1,0 +1,44 @@
+{
+  "name": "cordova-plugin-bluetoothle",
+  "version": "4.0.0",
+  "description": "Use the Bluetooth Low Energy plugin to connect your Cordova app to new Bluetooth devices like heart rate monitors, thermometers, etc...",
+  "cordova": {
+    "id": "cordova-plugin-bluetoothle",
+    "platforms": [
+      "android",
+      "ios",
+      "osx",
+      "windows"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/randdusing/cordova-plugin-bluetoothle"
+  },
+  "keywords": [
+    "bluetooth",
+    "bluetoothle",
+    "bluetooth le",
+    "cordova",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "cordova-windows"
+  ],
+  "engines": [
+    {
+      "name": "cordova-plugman",
+      "version": ">=5.0.0"
+    },
+    {
+      "name": "cordova-android",
+      "version": ">=5.0.0"
+    }
+  ],
+  "author": "Rand Dusing",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/randdusing/cordova-plugin-bluetoothle/issues"
+  },
+  "homepage": "https://github.com/randdusing/cordova-plugin-bluetoothle#readme"
+}

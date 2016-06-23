@@ -1,0 +1,35 @@
+{
+  "name": "resinbleconfigurator",
+  "authors": [
+    "curcuz <czkzcz.cmc@gmail.com>"
+  ],
+  "description": "a companion mobile application for resin-wifi-connect-ble",
+  "main": "index.html",
+  "keywords": [
+    "resin",
+    "wifi",
+    "ble",
+    "configurator",
+    "io",
+    "bluetooth",
+    "companion",
+    "config",
+    "configuration"
+  ],
+  "license": "Apache-2.0",
+  "homepage": "https://resin.io",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.7",
+    "ngCordova": "^0.1.26-alpha",
+    "ng-cordova-bluetoothle": "git://github.com/randdusing/ng-cordova-bluetoothle.git#master",
+    "angular-material": "^1.0.9"
+  }
+}
