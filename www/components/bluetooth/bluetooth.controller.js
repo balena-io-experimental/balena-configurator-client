@@ -27,9 +27,11 @@
                 vm.devicesFound = false;
                 vm.devices = [];
                 if (vm.connected) {
-
+                  bluetoothService.disconnect(vm.connected,function(result){
+                    vm.connected = null;
+                  });
                 }
-                bluetoothService.disconnect(vm.connected);
+                $scope.$apply();
                 bluetoothService.startScan(function(device) {
                     vm.devicesFound = true;
                     vm.devices.push(device);
