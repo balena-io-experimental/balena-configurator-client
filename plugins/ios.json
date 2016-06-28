@@ -7,15 +7,19 @@
         "files": {}
     },
     "installed_plugins": {
-        "cordova-plugin-bluetoothle": {
-            "PACKAGE_NAME": "com.resin.bleconfigurator"
-        },
-        "cordova-plugin-splashscreen": {
-            "PACKAGE_NAME": "com.resin.bleconfigurator"
-        },
         "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.resin.bleconfigurator"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.resin.bleconfigurator"
+        },
+        "cordova-plugin-ble-central": {
             "PACKAGE_NAME": "com.resin.bleconfigurator"
         }
     },
-    "dependent_plugins": {}
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.resin.bleconfigurator"
+        }
+    }
 }

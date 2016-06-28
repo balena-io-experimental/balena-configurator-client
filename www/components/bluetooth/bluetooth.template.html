@@ -1,0 +1,43 @@
+<md-progress-linear class="md-accent" md-mode="indeterminate" ng-if="bc.loading"></md-progress-linear>
+<md-content class="bluetooth-content md-accent" layout-align="center center" layout-wrap layout="row">
+    <div class="full-width">
+        <h3 ng-if="!bc.devicesFound">No device found</h3>
+        <h3 ng-if="bc.devicesFound">Select a Device</h3>
+    </div>
+    <div class="devices-list text-center">
+        <md-card ng-repeat="device in bc.devices | filter: searchText">
+            <md-card-content>
+                <h2 class="card-title center">device :
+                    {{device.name}}</h2>
+                <p>Ble MAC:
+                    {{device.id}}</p>
+                <p>Ble rssi:
+                    {{device.rssi}}</p>
+                <p ng-if="bc.connected == device.id">
+                  <md-input-container>
+                    <label>SSID</label>
+                    <input ng-model="bc.ssid">
+                  </md-input-container>
+                  <md-input-container>
+                    <label>PSK</label>
+                    <input type="password" ng-model="bc.psk">
+                  </md-input-container>
+                  <md-input-container>
+                    <md-button class="md-raised accent-btn" ng-click="bc.configure(device.id)">Configure</md-button>
+                    <md-button class="md-raised warn-btn" ng-click="bc.disconnect(device.id)">Cancel</md-button>
+                  </md-input-container>
+                </p>
+            </md-card-content>
+            <md-card-actions layout="row" layout-align="end center">
+                <md-button class="md-raised primary-btn" ng-if="!bc.connected" ng-click="bc.information(device.id)">Configure</md-button>
+            </md-card-actions>
+        </md-card>
+    </div>
+
+
+    <md-button aria-label="FAB" ng-class="{ 'accent-btn': bc.loading, 'primary-btn': !bc.loading }" class=" md-fab scan-button" ng-click="bc.toggleScan()">
+        <md-icon class="md-48" ng-if="bc.loading">block</md-icon>
+        <md-icon class="md-48" ng-if="!bc.loading">track_changes</md-icon>
+    </md-button>
+
+</md-content>

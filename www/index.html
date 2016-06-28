@@ -32,20 +32,57 @@
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <!-- bower:css -->
+        <link rel="stylesheet" href="bower_components/angular-material/angular-material.css"/>
+        <link rel="stylesheet" href="css/google_material_icons.css" charset="utf-8">
+        <!-- endbower -->
+
+        <link href="components/core/styles/main.css" rel="stylesheet" type="text/css">
+        <!-- /include css -->
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <title>Resin BLE Configurator</title>
     </head>
-    <body>
-        <div class="app">
-            <h1>BLE Configurator</h1>
-        </div>
+    <body ng-app="bluetoothConfig" id="app" class="app">
+
+      <!--[if lt IE 9]>
+                <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+            <![endif]-->
+
+      <div ui-view="app"></div>
+
+        <!-- bower:js -->
+        <script src="bower_components/angular/angular.js"></script>
         <script src="bower_components/ngCordova/dist/ng-cordova.js"></script>
         <script type="text/javascript" src="cordova.js"></script>
-        <script src="bower_components/ng-cordova-bluetoothle/ng-cordova-bluetoothle.js"></script>
-        <script src="bower_components/angular/angular.js"></script>
-        <script src="bower_components/angular/angular-animate.js"></script>
-        <script src="bower_components/angular/angular-aria.js"></script>
-        <script src="bower_components/angular/angular-material.js"></script>
+        <script src="bower_components/angular-animate/angular-animate.js"></script>
+        <script src="bower_components/angular-aria/angular-aria.js"></script>
+        <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+        <script src="bower_components/angular-messages/angular-messages.js"></script>
+        <script src="bower_components/angular-material/angular-material.js"></script>
+        <script src="bower_components/lodash/lodash.js"></script>
+        <script src="bower_components/async/dist/async.js"></script>
+        <script src="bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
+        <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+        <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+        <!-- endbower -->
+        <script src="components/app.module.js"></script>
+        <script src="components/router/router.module.js"></script>
+        <script src="components/core/app.constants.js"></script>
+        <script src="components/core/app.controller.js"></script>
+        <script src="components/core/app.directives.js"></script>
+        <script src="components/core/app.routes.js"></script>
+        <script src="components/core/app.services.js"></script>
+        <script src="components/core/app.configs.js"></script>
+        <script src="components/router/router.provider.js"></script>
+
+        <script src="components/bluetooth/bluetooth.module.js"></script>
+        <script src="components/bluetooth/bluetooth.controller.js"></script>
+        <script src="components/bluetooth/bluetooth.routes.js"></script>
+        <script src="components/bluetooth/bluetooth.service.js"></script>
+
         <script type="text/javascript" src="js/index.js"></script>
+
+        </script>
+        <!-- /include js -->
     </body>
 </html>

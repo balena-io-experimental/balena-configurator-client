@@ -10,12 +10,16 @@
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.resin.bleconfigurator"
         },
-        "cordova-plugin-bluetoothle": {
+        "cordova-plugin-statusbar": {
             "PACKAGE_NAME": "com.resin.bleconfigurator"
         },
-        "cordova-plugin-splashscreen": {
+        "cordova-plugin-ble-central": {
             "PACKAGE_NAME": "com.resin.bleconfigurator"
         }
     },
-    "dependent_plugins": {}
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.resin.bleconfigurator"
+        }
+    }
 }

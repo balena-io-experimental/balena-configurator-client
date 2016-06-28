@@ -1,17 +1,17 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
     {
-        "file": "plugins/cordova-plugin-bluetoothle/www/bluetoothle.js",
-        "id": "cordova-plugin-bluetoothle.BluetoothLe",
+        "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
+        "id": "cordova-plugin-statusbar.statusbar",
         "clobbers": [
-            "window.bluetoothle"
+            "window.StatusBar"
         ]
     },
     {
-        "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
-        "id": "cordova-plugin-splashscreen.SplashScreen",
+        "file": "plugins/cordova-plugin-ble-central/www/ble.js",
+        "id": "cordova-plugin-ble-central.ble",
         "clobbers": [
-            "navigator.splashscreen"
+            "ble"
         ]
     }
 ];
@@ -19,8 +19,9 @@ module.exports.metadata =
 // TOP OF METADATA
 {
     "cordova-plugin-whitelist": "1.2.2",
-    "cordova-plugin-bluetoothle": "4.0.0",
-    "cordova-plugin-splashscreen": "3.2.2"
+    "cordova-plugin-statusbar": "2.1.3",
+    "cordova-plugin-compat": "1.0.0",
+    "cordova-plugin-ble-central": "1.1.1"
 };
 // BOTTOM OF METADATA
 });

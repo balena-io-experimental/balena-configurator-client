@@ -7,20 +7,28 @@
         "is_top_level": true,
         "variables": {}
     },
-    "cordova-plugin-bluetoothle": {
+    "cordova-plugin-statusbar": {
         "source": {
             "type": "registry",
-            "id": "cordova-plugin-bluetoothle"
+            "id": "cordova-plugin-statusbar"
         },
         "is_top_level": true,
         "variables": {}
     },
-    "cordova-plugin-splashscreen": {
+    "cordova-plugin-ble-central": {
         "source": {
             "type": "registry",
-            "id": "cordova-plugin-splashscreen"
+            "id": "cordova-plugin-ble-central"
         },
         "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-compat": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-compat"
+        },
+        "is_top_level": false,
         "variables": {}
     }
 }

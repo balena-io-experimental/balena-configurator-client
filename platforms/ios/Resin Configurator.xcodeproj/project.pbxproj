@@ -15,10 +15,11 @@
 		3047A5121AB8059700498E2A /* build-debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3047A50F1AB8059700498E2A /* build-debug.xcconfig */; };
 		3047A5131AB8059700498E2A /* build-release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3047A5101AB8059700498E2A /* build-release.xcconfig */; };
 		3047A5141AB8059700498E2A /* build.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3047A5111AB8059700498E2A /* build.xcconfig */; };
-		0685BA23A4E749FD90F6D5B9 /* BluetoothLePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B999B85735C45B3B45875A5 /* BluetoothLePlugin.m */; };
 		5829738451984BD1B415ECBD /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39AD34E8AFD2412D8234B188 /* CoreBluetooth.framework */; };
-		065F4A2F7268454F82699736 /* CDVSplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 177D8DBB67794FCF9B0EC187 /* CDVSplashScreen.m */; };
-		10EBB7C86F9E4082B73A9A7E /* CDVViewController+SplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 25172717BDE546A1974074A9 /* CDVViewController+SplashScreen.m */; };
+		0FA0D5F565FC4C83B01517D9 /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F2782B00A663451EA74C472F /* CDVStatusBar.m */; };
+		AF43FF218D79446ABB6D97EE /* BLECentralPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C74F579D2E104C498E18C8CF /* BLECentralPlugin.m */; };
+		24D2545A937045AEA1ABCE07 /* CBPeripheral+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C1452A0D524372A8C01C1F /* CBPeripheral+Extensions.m */; };
+		6ECBB1C8246C4DE68B5BF116 /* BLECommandContext.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4DA94EB7ED466E946351B6 /* BLECommandContext.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,13 +59,15 @@
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "Resin Configurator/config.xml"; sourceTree = "<group>"; };
 		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Bridging-Header.h"; path = "Bridging-Header.h"; sourceTree = "<group>"; };
-		7B999B85735C45B3B45875A5 /* BluetoothLePlugin.m */ = {isa = PBXFileReference; name = "BluetoothLePlugin.m"; path = "cordova-plugin-bluetoothle/BluetoothLePlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		6D9599AC28794AE0AEDA6836 /* BluetoothLePlugin.h */ = {isa = PBXFileReference; name = "BluetoothLePlugin.h"; path = "cordova-plugin-bluetoothle/BluetoothLePlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		39AD34E8AFD2412D8234B188 /* CoreBluetooth.framework */ = {isa = PBXFileReference; name = "CoreBluetooth.framework"; path = "System/Library/Frameworks/CoreBluetooth.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
-		177D8DBB67794FCF9B0EC187 /* CDVSplashScreen.m */ = {isa = PBXFileReference; name = "CDVSplashScreen.m"; path = "cordova-plugin-splashscreen/CDVSplashScreen.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		25172717BDE546A1974074A9 /* CDVViewController+SplashScreen.m */ = {isa = PBXFileReference; name = "CDVViewController+SplashScreen.m"; path = "cordova-plugin-splashscreen/CDVViewController+SplashScreen.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		0BCD171C28E6466F997F3A66 /* CDVSplashScreen.h */ = {isa = PBXFileReference; name = "CDVSplashScreen.h"; path = "cordova-plugin-splashscreen/CDVSplashScreen.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		7FB9027FB5E6489EB8E19B49 /* CDVViewController+SplashScreen.h */ = {isa = PBXFileReference; name = "CDVViewController+SplashScreen.h"; path = "cordova-plugin-splashscreen/CDVViewController+SplashScreen.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		F2782B00A663451EA74C472F /* CDVStatusBar.m */ = {isa = PBXFileReference; name = "CDVStatusBar.m"; path = "cordova-plugin-statusbar/CDVStatusBar.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		41C7EFED42994EA884336B7B /* CDVStatusBar.h */ = {isa = PBXFileReference; name = "CDVStatusBar.h"; path = "cordova-plugin-statusbar/CDVStatusBar.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		C74F579D2E104C498E18C8CF /* BLECentralPlugin.m */ = {isa = PBXFileReference; name = "BLECentralPlugin.m"; path = "cordova-plugin-ble-central/BLECentralPlugin/BLECentralPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		28C1452A0D524372A8C01C1F /* CBPeripheral+Extensions.m */ = {isa = PBXFileReference; name = "CBPeripheral+Extensions.m"; path = "cordova-plugin-ble-central/BLECentralPlugin/CBPeripheral+Extensions.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		CB4DA94EB7ED466E946351B6 /* BLECommandContext.m */ = {isa = PBXFileReference; name = "BLECommandContext.m"; path = "cordova-plugin-ble-central/BLECentralPlugin/BLECommandContext.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		AB79F48EBF99456AB4B6E6A7 /* BLECentralPlugin.h */ = {isa = PBXFileReference; name = "BLECentralPlugin.h"; path = "cordova-plugin-ble-central/BLECentralPlugin/BLECentralPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		A0407EF5D5F642C1ADA159D0 /* CBPeripheral+Extensions.h */ = {isa = PBXFileReference; name = "CBPeripheral+Extensions.h"; path = "cordova-plugin-ble-central/BLECentralPlugin/CBPeripheral+Extensions.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		5E18CF6DCC8943FA90CFE459 /* BLECommandContext.h */ = {isa = PBXFileReference; name = "BLECommandContext.h"; path = "cordova-plugin-ble-central/BLECentralPlugin/BLECommandContext.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,12 +172,14 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				7B999B85735C45B3B45875A5 /* BluetoothLePlugin.m */,
-				6D9599AC28794AE0AEDA6836 /* BluetoothLePlugin.h */,
-				177D8DBB67794FCF9B0EC187 /* CDVSplashScreen.m */,
-				25172717BDE546A1974074A9 /* CDVViewController+SplashScreen.m */,
-				0BCD171C28E6466F997F3A66 /* CDVSplashScreen.h */,
-				7FB9027FB5E6489EB8E19B49 /* CDVViewController+SplashScreen.h */,
+				F2782B00A663451EA74C472F /* CDVStatusBar.m */,
+				41C7EFED42994EA884336B7B /* CDVStatusBar.h */,
+				C74F579D2E104C498E18C8CF /* BLECentralPlugin.m */,
+				28C1452A0D524372A8C01C1F /* CBPeripheral+Extensions.m */,
+				CB4DA94EB7ED466E946351B6 /* BLECommandContext.m */,
+				AB79F48EBF99456AB4B6E6A7 /* BLECentralPlugin.h */,
+				A0407EF5D5F642C1ADA159D0 /* CBPeripheral+Extensions.h */,
+				5E18CF6DCC8943FA90CFE459 /* BLECommandContext.h */,
 			);
 			name = Plugins;
 			path = "Resin Configurator/Plugins";
@@ -289,9 +294,10 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
-				0685BA23A4E749FD90F6D5B9 /* BluetoothLePlugin.m in Sources */,
-				065F4A2F7268454F82699736 /* CDVSplashScreen.m in Sources */,
-				10EBB7C86F9E4082B73A9A7E /* CDVViewController+SplashScreen.m in Sources */,
+				0FA0D5F565FC4C83B01517D9 /* CDVStatusBar.m in Sources */,
+				AF43FF218D79446ABB6D97EE /* BLECentralPlugin.m in Sources */,
+				24D2545A937045AEA1ABCE07 /* CBPeripheral+Extensions.m in Sources */,
+				6ECBB1C8246C4DE68B5BF116 /* BLECommandContext.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

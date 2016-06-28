@@ -1,0 +1,30 @@
+<div class="md-toolbar-tools">
+  <div class="vt-separator"></div>
+  <md-button aria-label="menu" class="md-icon-button" ng-click="mac.previousState()">
+    <md-icon>
+      arrow_back
+    </md-icon>
+  </md-button>
+  <div class="vt-separator"></div>
+  <md-menu md-offset="-70 60">
+    <md-button aria-label="user-actions" class="md-icon-button" ng-click="$mdOpenMenu($event)">
+      <md-icon md-svg-src="img/icons/flag-{{mac.language.selected}}.svg"></md-icon>
+    </md-button>
+    <md-menu-content width="3">
+      <md-menu-item ng-repeat="(localeId, langName) in mac.language.available">
+        <md-button ng-click="mac.setLanguage(localeId, $event)">
+          <md-icon md-svg-src="img/icons/flag-{{langName}}.svg"></md-icon>
+          {{langName}}
+        </md-button>
+      </md-menu-item>
+    </md-menu-content>
+  </md-menu>
+  <div class="vt-separator"></div>
+  <span flex></span>
+  <form class="navbar-form main-search" role="search" ng-show="mac.currentState === 'bluetooth'">
+    <md-input-container>
+      <md-icon>search</md-icon>
+      <input type="text" aria-label="search" ng-model="$parent.searchText">
+    </md-input-container>
+  </form>
+</div>

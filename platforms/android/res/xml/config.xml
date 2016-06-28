@@ -5,20 +5,20 @@
         <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
         <param name="onload" value="true" />
     </feature>
-    <feature name="BluetoothLePlugin">
-        <param name="android-package" value="com.randdusing.bluetoothle.BluetoothLePlugin" />
-    </feature>
-    <feature name="SplashScreen">
-        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+    <feature name="StatusBar">
+        <param name="android-package" value="org.apache.cordova.statusbar.StatusBar" />
         <param name="onload" value="true" />
+    </feature>
+    <feature name="BLE">
+        <param name="android-package" value="com.megster.cordova.ble.central.BLECentralPlugin" />
     </feature>
     <allow-intent href="market:*" />
     <name>Resin Configurator</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+    <author email="carlo@resin.io" href="http://resin.io">
+        Carlo Maria Curinga - Resin.io
     </author>
     <content src="index.html" />
     <access origin="*" />
@@ -28,4 +28,5 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <preference name="StatusBarBackgroundColor" value="#F7C30F" />
 </widget>
