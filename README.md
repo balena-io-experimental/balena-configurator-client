@@ -1,9 +1,9 @@
-# resin-configurator-client
-a cross-platform companion app for [resin-wifi-connect-ble](https://github.com/resin-io-playground/wifi-connect-ble)
+# balena-configurator-client
+a cross-platform companion app for [balena-wifi-connect-ble](https://github.com/balena-io-playground/wifi-connect-ble)
 
-![screenshot1](https://raw.githubusercontent.com/resin-io-playground/resin-configurator-client/master/docs_assets/0.jpg)
+![screenshot1](https://raw.githubusercontent.com/balena-io-playground/balena-configurator-client/master/docs_assets/0.jpg)
 
-![screenshot2](https://raw.githubusercontent.com/resin-io-playground/resin-configurator-client/master/docs_assets/1.jpg)
+![screenshot2](https://raw.githubusercontent.com/balena-io-playground/balena-configurator-client/master/docs_assets/1.jpg)
 
 ### Installation
 
@@ -15,8 +15,8 @@ bower install
 
 ### Customization
 
-* You might want to change `name`,`description` and `author` tags from [config.xml](https://github.com/resin-io-playground/resin-configurator-client/blob/master/config.xml)
-* the [icon.png](https://github.com/resin-io-playground/resin-configurator-client/blob/master/icon.png) in the root of the projects gets automatically converted in all the required icon formats/sizes. Simply put your one with same sizes than the provided one and build.
+* You might want to change `name`,`description` and `author` tags from [config.xml](https://github.com/balena-io-playground/balena-configurator-client/blob/master/config.xml)
+* the [icon.png](https://github.com/balena-io-playground/balena-configurator-client/blob/master/icon.png) in the root of the projects gets automatically converted in all the required icon formats/sizes. Simply put your one with same sizes than the provided one and build.
 
 ### Testing
 
